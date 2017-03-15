@@ -36,3 +36,31 @@ int main(){
 	
 	return 0 ;
 }
+
+/* Output:
+--------------------------------------------------
+Select the operator from +, -, * and /
++
+Enter two numbers
+10
+12
+Sum of given numbers: 22
+--------------------------------------------------
+Select the operator from +, -, * and /
+*
+Enter two numbers
+10 11
+Product of given numbers: 110
+--------------------------------------------------
+Select the operator from +, -, * and /
+-
+Enter two numbers
+20, 10
+Difference of the given numbers: 20
+--------------------------------------------------
+Select the operator from +, -, * and /
+/
+Enter two numbers
+20 2
+Division of given numbers: 10
+-------------------------------------------------- */
