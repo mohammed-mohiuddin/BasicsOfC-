@@ -1,6 +1,8 @@
-/* Program to demonstrate the following concepts
-1. Accessing the methods in the same class
-2. Accessing methods in the base class (inheritance)
+/* Program to demonstrate the concept of inheritance. There are three
+classes. One is base class and other two are child classes. Base class
+(BasicMathOperations) has three methods:
+1. addValues (add two integers, used by fact)
+
 */
 
 
@@ -146,19 +148,19 @@ class FactorsOfANumber : public BasicMathOperations{
 int main(){	
 	//base class
 	BasicMathOperations baseClassObject;					//create base class(BasicMathOperations) object
-	baseClassObject.printSumAndDiff(20, 10);			//calculate and print sum and difference of 20 and 10
+	baseClassObject.printSumAndDiff(20, 10);				//calculate and print sum and difference of 20 and 10
 	cout << "----------------------------------------------" << endl ; 
-	baseClassObject.printSumAndDiff(10, 20);			//calculate and print sum and difference of 10 and 20
+	baseClassObject.printSumAndDiff(10, 20);				//calculate and print sum and difference of 10 and 20
 	
 	//derived class 1
-	Factorial derivedClassOneObject;					//create derived class 1(Factorial) object
-	derivedClassOneObject.printFactorial(5);			//print calculate and print factorial of 5
+	Factorial derivedClassOneObject;						//create derived class 1(Factorial) object
+	derivedClassOneObject.printFactorial(5);				//print calculate and print factorial of 5
 	cout << "----------------------------------------------" << endl ; 
-	derivedClassOneObject.printFactorial(3);			//print calculate and print factorial of 3
+	derivedClassOneObject.printFactorial(3);				//print calculate and print factorial of 3
 	
 	//derived class 2
-	FactorsOfANumber factObj ; 							//create derived class 2(FactorsOfANumber) object
-	factObj.printFactors(24);							//calculate and print factors of 24
+	FactorsOfANumber factObj ; 								//create derived class 2(FactorsOfANumber) object
+	factObj.printFactors(24);								//calculate and print factors of 24
 	cout << "----------------------------------------------" << endl ; 
-	factObj.printFactors(15);							//calculate and print factors of 15
+	factObj.printFactors(15);								//calculate and print factors of 15
 }
