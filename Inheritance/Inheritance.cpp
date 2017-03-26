@@ -147,20 +147,51 @@ class FactorsOfANumber : public BasicMathOperations{
 //driver method, main
 int main(){	
 	//base class
-	BasicMathOperations baseClassObject;					//create base class(BasicMathOperations) object
-	baseClassObject.printSumAndDiff(20, 10);				//calculate and print sum and difference of 20 and 10
+	BasicMathOperations baseClassObject;			//create base class(BasicMathOperations) object
+	baseClassObject.printSumAndDiff(20, 10);		//calculate and print sum and difference of 20 and 10
 	cout << "----------------------------------------------" << endl ; 
-	baseClassObject.printSumAndDiff(10, 20);				//calculate and print sum and difference of 10 and 20
+	baseClassObject.printSumAndDiff(10, 20);		//calculate and print sum and difference of 10 and 20
 	
 	//derived class 1
-	Factorial derivedClassOneObject;						//create derived class 1(Factorial) object
-	derivedClassOneObject.printFactorial(5);				//print calculate and print factorial of 5
+	Factorial derivedClassOneObject;				//create derived class 1(Factorial) object
+	derivedClassOneObject.printFactorial(5);		//print calculate and print factorial of 5
 	cout << "----------------------------------------------" << endl ; 
-	derivedClassOneObject.printFactorial(3);				//print calculate and print factorial of 3
+	derivedClassOneObject.printFactorial(3);		//print calculate and print factorial of 3
 	
 	//derived class 2
-	FactorsOfANumber factObj ; 								//create derived class 2(FactorsOfANumber) object
-	factObj.printFactors(24);								//calculate and print factors of 24
+	FactorsOfANumber factObj ; 						//create derived class 2(FactorsOfANumber) object
+	factObj.printFactors(24);						//calculate and print factors of 24
 	cout << "----------------------------------------------" << endl ; 
-	factObj.printFactors(15);								//calculate and print factors of 15
+	factObj.printFactors(15);						//calculate and print factors of 15
 }
+
+/* Output:
+==============================================
+BasicMathOperations class object is created
+==============================================
+Sum of numbers: 20, 10 is 30
+Difference of numbers: 20, 10 is 10
+----------------------------------------------
+Sum of numbers: 10, 20 is 30
+Difference of numbers: 10, 20 is -10
+==============================================
+BasicMathOperations class object is created
+==============================================
+==============================================
+Factorial class object is created
+==============================================
+Factorial of 5 is 120
+----------------------------------------------
+Factorial of 3 is 6
+==============================================
+BasicMathOperations class object is created
+==============================================
+==============================================
+FactorsOfANumber class object is created
+==============================================
+Factors of the number: 24 between 1 and 10 are
+1 2 3 4 6 8
+----------------------------------------------
+Factors of the number: 15 between 1 and 10 are
+1 3 5
+*/
